@@ -3,9 +3,9 @@
     <header class ="container-fluid">
         <title>Simon</title>
         <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="main.css" />
         <!--Tell broswers how to diplay info-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="main.css" />
 
         <!-- Include bootstrap CSS framework -->
         <link
@@ -15,7 +15,7 @@
         crossorigin="anonymous"
         />
     </header>
-    <body>
+    <body class="bg-dark text-light">
         <nav class="navbar fixed-top navbar-dark">
             <a class="navbar-brand" href="#">Simon<sup>&reg;</sup></a>
             <menu class="navbar-nav">
@@ -33,19 +33,18 @@
               </li>
             </menu>
           </nav>
-        <main>
+        <main class="container-fluid bg-secondary text-center">
             <h1>Welcome</h1>
             <div>Login</div>
             <form method="get" action="play.html">
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Your name here" />
-                <button type="submit">Login</button>
+                <button type="submit" class="btn btn-primary">Login</button>
             </form>
         </main>
         <footer>
-            <hr />
-            <span class="text-reset">Author Name(s)</span>
-            <div>Kenneth Salomonson</div>
+            <span class = "text-reset">Author Name(s)</span>
+            <div class = "text-reset">Kenneth Salomonson</div>
             <br />
             <a href="https://github.com/ksalomonson/simon">GitHub</a>
           </footer>
